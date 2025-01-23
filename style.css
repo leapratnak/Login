@@ -1,0 +1,199 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.content_left {
+  /* display: flex;
+  flex-direction: column; */
+  width: 30%;
+  height: 100vh;
+  background-color: rgb(236, 243, 244);
+}
+.content_left h2 {
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.check {
+  margin-top: 5rem;
+  margin-left: 1rem;
+}
+
+.check_one {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  line-height: 25px;
+  color: gray;
+}
+.check_one p {
+  margin-left: 1.5rem;
+}
+.check_one input {
+  margin-right: 5px;
+}
+.check_five {
+  margin-top: 16rem;
+  margin-left: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2rem;
+  color: gray;
+}
+
+.container_right {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.content_right {
+  margin-top: 4rem;
+}
+.list_on {
+  text-align: center;
+}
+.list_on #logo i {
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  margin-bottom: 1rem;
+}
+.list_on h4 {
+  margin-top: 8px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.btn_google:hover {
+  background-color: skyblue;
+}
+.btn_google {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 10px;
+  margin-top: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.content_under {
+  display: flex;
+  justify-content: center;
+}
+.list_on h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.list_under {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+.list_under input {
+  padding: 8px;
+  border-radius: 5px;
+}
+.list_under button {
+  padding: 7px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+.list_under button:hover {
+  background-color: darkblue;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+}
+.dot {
+  width: 7px;
+  height: 7px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+.dot.active {
+  background-color: blue;
+  width: 25px;
+  border-radius: 10px; /* Keeps it slightly rounded */
+}
+@media only screen and (max-width: 1150px) {
+  .check_one h3 {
+    font-size: 15px;
+  }
+  .check_one p {
+    font-size: 12px;
+  }
+  .check_one {
+    margin-left: 1rem;
+  }
+  .content_left {
+    min-width: 270px;
+  }
+  .check_five {
+    font-size: 14px;
+    display: block;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .content_left {
+    width: 100%;
+    height: 100vh;
+    /* padding-top: 1rem; */
+    top: 0;
+    margin-top: 0;
+  }
+  .container_right {
+    width: 100%;
+    height: 100vh;
+  }
+  .content_right {
+    width: 100%;
+    min-width: 400px;
+  }
+  .check_five {
+    font-size: 14px;
+    display: flex;
+  }
+  .check_one h3 {
+    font-size: 20px;
+  }
+  .check_one p {
+    font-size: 15px;
+  }
+  .check_one {
+    margin-left: 2rem;
+  }
+  .list_under {
+    display: flex;
+    min-width: 300px;
+    flex-direction: column;
+  }
+  .btn_google {
+    min-width: 300px;
+    padding: 3px 10px;
+  }
+}
